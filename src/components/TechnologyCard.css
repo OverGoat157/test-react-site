@@ -1,0 +1,33 @@
+/* src/components/TechnologyCard.css */
+.technology-card {
+  border: 1px solid #ddd;
+  border-left: 6px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,.05);
+  transition: all .3s ease;
+  cursor: pointer;
+  max-width: 600px;
+}
+.technology-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,.1);
+}
+.technology-card h3 { margin:0 0 8px; font-size:1.25rem; color:#2c3e50; }
+.technology-card p { margin:0 0 12px; color:#555; font-size:.95rem; }
+
+.status-info { display:flex; justify-content:space-between; font-weight:500; }
+
+.status-completed   { border-left-color:#27ae60; }
+.status-completed   .status-text,
+.status-completed   span { color:#27ae60; }
+
+.status-in-progress { border-left-color:#f39c12; }
+.status-in-progress .status-text,
+.status-in-progress span { color:#f39c12; }
+
+.status-not-started { border-left-color:#e74c3c; }
+.status-not-started .status-text,
+.status-not-started span { color:#e74c3c; }
