@@ -124,3 +124,52 @@ App {
   flex: 1;
   color: #333;
 }
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  background: transparent;
+  border: 1.5px solid transparent;
+  color: #4b5563;
+}
+
+body.dark .nav-button {
+  color: #d1d5db;
+}
+
+.nav-button:hover {
+  background: #f3f4f6;
+  border-color: #e5e7eb;
+  transform: translateY(-1px);
+}
+
+body.dark .nav-button:hover {
+  background: #374151;
+  border-color: #4b5563;
+}
+
+/* Скрыть текст на мобильных */
+.nav-button .button-text {
+  display: inline;
+}
+
+@media (max-width: 640px) {
+  .nav-button .button-text {
+    display: none;
+  }
+  .nav-button {
+    padding: 0.5rem;
+  }
+}
+
+/* Иконка в кнопке */
+.nav-button svg {
+  width: 20px;
+  height: 20px;
+}

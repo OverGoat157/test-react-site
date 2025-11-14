@@ -1,0 +1,81 @@
+/* src/components/ProgressDashboard.css */
+.progress-dashboard {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .progress-dashboard {
+  background: #1e1e1e;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.progress-dashboard h2 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+body.dark .progress-dashboard h2 {
+  color: #e5e7eb;
+}
+
+.weekly-progress {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+}
+
+body.dark .weekly-progress {
+  background-color: #2d2d2d;
+}
+
+.weekly-progress h3 {
+  margin: 0 0 1rem 0;
+  color: #4b5563;
+  font-size: 1.1rem;
+}
+
+body.dark .weekly-progress h3 {
+  color: #9ca3af;
+}
+
+.weekly-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.week-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.week-label {
+  min-width: 80px;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+body.dark .week-label {
+  color: #9ca3af;
+}
+
+.week-percentage {
+  min-width: 40px;
+  font-size: 0.875rem;
+  color: #1f2937;
+  font-weight: 600;
+  text-align: right;
+}
+
+body.dark .week-percentage {
+  color: #e5e7eb;
+}
